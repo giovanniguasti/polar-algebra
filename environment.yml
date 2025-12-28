@@ -1,0 +1,15 @@
+name: polar
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - matplotlib
+  - pytorch
+  - torchvision
+  - cpuonly
+  - pip:
+      - tqdm
