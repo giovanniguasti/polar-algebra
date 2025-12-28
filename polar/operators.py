@@ -23,26 +23,16 @@ from typing import List
 
 def shift_operator(N: int, k: int) -> np.ndarray:
     """
-    Circular shift operator R_k ∈ C^{N×N}.
-
-    Parameters
-    ----------
-    N : int
-        Signal length.
-    k : int
-        Shift index (can be negative or > N).
-
-    Returns
-    -------
-    R_k : ndarray of shape (N, N)
-        Permutation matrix implementing the circular shift.
+    Circular shift operator R_k such that (R_k x)[n] = x[(n - k) mod N].
     """
     if N <= 0:
         raise ValueError("N must be a positive integer.")
-
     k = k % N
-    I = np.eye(N, dtype=float)
-    return np.roll(I, shift=k, axis=1)
+
+    R = np.zeros((N, N), dtype=float)
+    for n in range(N):
+        R[n, (n - k) % N] = 1.0
+    return R
 
 
 def inverse_shift_operator(N: int, k: int) -> np.ndarray:
@@ -118,6 +108,7 @@ def is_permutation(R: np.ndarray) -> bool:
 def apply_shift(x: np.ndarray, k: int) -> np.ndarray:
     """
     Apply circular shift directly to a signal (without building R_k).
+    (R_k x)[n] = x[(n - k) mod N]
 
     Parameters
     ----------
