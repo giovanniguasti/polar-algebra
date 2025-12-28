@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "Polar Spectral Operators for Learning on Angular Domains"
+version: "0.1.0"
+date-released: "2025-12-27"
+license: "MIT"
+repository-code: "https://github.com/<USER>/<REPO>"
+url: "https://github.com/<USER>/<REPO>"
+
+authors:
+  - family-names: "Guasti"
+    given-names: "Giovanni"
+    affiliation: "AMD / Xilinx"
+    orcid: "https://orcid.org/<ORCID-IF-AVAILABLE>"
+
+preferred-citation:
+  type: article
+  title: "Polar Algebra and Fully Spectral Neural Models"
+  authors:
+    - family-names: "Guasti"
+      given-names: "Giovanni"
+  year: 2025
+  journal: "arXiv"
+  # Uncomment and fill when available:
+  # doi: "10.XXXX/XXXXX"
+  # url: "https://arxiv.org/abs/<ARXIV_ID>"
+  # volume: "<VOL>"
+  # issue: "<ISSUE>"
+  # start: "<PAGE_START>"
+  # end: "<PAGE_END>"

@@ -1,0 +1,87 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+
+# =========================
+# Virtual environments
+# =========================
+.env
+.venv
+env/
+venv/
+ENV/
+conda/
+miniconda/
+anaconda/
+
+# =========================
+# PyTorch / ML artifacts
+# =========================
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Training outputs
+runs/
+outputs/
+logs/
+checkpoints/
+
+# =========================
+# Datasets
+# =========================
+data/
+datasets/
+mnist/
+MNIST/
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+*.ipynb
+
+# =========================
+# Editors / IDEs
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# =========================
+# Experiment artifacts
+# =========================
+*.csv
+*.tsv
+*.json
+*.yaml
+*.yml
+
+# =========================
+# LaTeX / paper artifacts
+# =========================
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# =========================
+# OS specific
+# =========================
+.DS_Store
+Thumbs.db
