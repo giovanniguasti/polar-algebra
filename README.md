@@ -51,9 +51,9 @@ performance.
 We recommend using a Conda environment.
 
 ```bash
-conda create -n polar python=3.10
+conda env create -f environment.yml
 conda activate polar
-pip install -r requirements.txt
+python -c "import torch; print(torch.__version__)"
 ```
 ---
 
